@@ -1,8 +1,7 @@
-/* Import nice font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary: #ff5e57; /* Color from screenshot button */
+  --primary: #ff5e57;
   --text-dark: #1e272e;
   --text-grey: #808e9b;
   --bg-grey: #f1f2f6;
@@ -18,14 +17,13 @@
 .page-wrapper {
   width: 100vw;
   min-height: 100vh;
-  background-color: rgb(69, 97, 209); /* Dark background like screenshot browser */
+  background-color: rgb(69, 97, 209);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
 
-/* The Main Modal */
 .modal-card {
   display: flex;
   width: 100%;
@@ -37,7 +35,6 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
-/* --- LEFT PANEL --- */
 .left-panel {
   flex: 1;
   position: relative;
@@ -50,7 +47,6 @@
   border-right: 1px solid #eee;
 }
 
-/* CSS Dot Pattern */
 .dot-pattern {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -79,7 +75,10 @@
   gap: 10px;
 }
 
-.mini-logo { width: 24px; height: 24px; }
+.mini-logo {
+  width: 24px;
+  height: 24px;
+}
 
 .promo-text {
   font-size: 2rem;
@@ -109,7 +108,6 @@
   border-radius: 12px;
 }
 
-/* --- RIGHT PANEL --- */
 .right-panel {
   flex: 1;
   padding: 50px;
@@ -145,7 +143,6 @@
   margin-bottom: 30px;
 }
 
-/* Upload Box Styling */
 .upload-area {
   flex-grow: 1;
   margin-bottom: 20px;
@@ -153,7 +150,9 @@
   flex-direction: column;
 }
 
-.file-input-hidden { display: none; }
+.file-input-hidden {
+  display: none;
+}
 
 .upload-label {
   flex-grow: 1;
@@ -173,11 +172,23 @@
   background: #fff5f5;
 }
 
-.upload-icon { font-size: 3rem; margin-bottom: 15px; opacity: 0.5; }
-.upload-title { font-weight: 600; color: var(--text-dark); margin-bottom: 5px; }
-.upload-subtitle { font-size: 0.85rem; color: var(--text-grey); }
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
 
-/* Button */
+.upload-title {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.upload-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-grey);
+}
+
 .process-btn {
   width: 100%;
   padding: 16px;
@@ -203,7 +214,6 @@
   box-shadow: none;
 }
 
-/* Result View Inside Upload Area */
 .result-view {
   width: 100%;
   height: 100%;
@@ -252,12 +262,29 @@
   font-weight: 600;
 }
 
-.download { background: #10ac84; color: white; }
-.reset { background: #c8d6e5; color: #576574; }
+.download {
+  background: #10ac84;
+  color: white;
+}
 
-/* Mobile Responsive */
+.reset {
+  background: #c8d6e5;
+  color: #576574;
+}
+
 @media (max-width: 800px) {
-  .modal-card { flex-direction: column; height: auto; max-width: 90%; }
-  .left-panel { padding: 30px; min-height: 300px; }
-  .right-panel { padding: 30px; }
+  .modal-card {
+    flex-direction: column;
+    height: auto;
+    max-width: 90%;
+  }
+
+  .left-panel {
+    padding: 30px;
+    min-height: 300px;
+  }
+
+  .right-panel {
+    padding: 30px;
+  }
 }

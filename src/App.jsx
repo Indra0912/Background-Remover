@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./App.css";
-import logoImage from "./assets/MBG.png"; // Ensure this matches your file name
+import logoImage from "./assets/MBG.png"; 
 
 function App() {
   const [image, setImage] = useState(null);
@@ -58,25 +58,20 @@ function App() {
   return (
     <div className="page-wrapper">
       <div className="modal-card">
-        
-        {/* --- LEFT PANEL (Decorative) --- */}
         <div className="left-panel">
-          <div className="dot-pattern"></div> {/* Background Pattern */}
+          <div className="dot-pattern"></div>
           <div className="promo-content">
             <div className="brand-badge">
                <span>Background Remover</span>
             </div>
             <h2 className="promo-text">Remove Background<br/>from Your Image</h2>
             <p className="promo-sub">Upload an image and remove the background automatically.</p>
-            
-            {/* Preview Image (Uses your logo as the 'example' image) */}
             <div className="hero-image-container">
                 <img src={logoImage} alt="Hero" className="hero-img" />
             </div>
           </div>
         </div>
 
-        {/* --- RIGHT PANEL (Functional) --- */}
         <div className="right-panel">
           <div className="panel-header">
             <h2>Background Remover</h2>
@@ -87,9 +82,7 @@ function App() {
             Remove backgrounds from your images with AI-powered creativity.
           </p>
 
-          {/* The Upload Box */}
           <div className="upload-area">
-            {/* If we have a result, show it here */}
             {bgRemoved ? (
                <div className="result-view">
                  <div className="checkered-bg">
@@ -101,7 +94,6 @@ function App() {
                  </div>
                </div>
             ) : (
-              /* Otherwise show the upload inputs */
               <>
                 <input 
                   type="file" 
@@ -120,7 +112,6 @@ function App() {
             )}
           </div>
 
-          {/* Main Action Button (Only show if image selected and not processed yet) */}
           {!bgRemoved && (
             <button 
               onClick={handleRemoveBackground} 
