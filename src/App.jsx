@@ -80,7 +80,7 @@ function App() {
         <div className="right-panel">
           <div className="panel-header">
             <h2>Background Remover</h2>
-            <span className="badge">Daily Credits: 50/50</span>
+            <span className="badge">Daily Credits: 50</span>
           </div>
           
           <p className="instruction-text">
