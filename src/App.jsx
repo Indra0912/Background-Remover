@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./App.css";
 import logoImage from "./assets/MBG.png"; 
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   const [image, setImage] = useState(null);
@@ -57,6 +58,7 @@ function App() {
 
   return (
     <div className="page-wrapper">
+       <SpeedInsights />
       <div className="modal-card">
         <div className="left-panel">
           <div className="dot-pattern"></div>
